@@ -137,7 +137,7 @@ document.addEventListener('keydown', (event) => {
 });
 
 async function loadPortfolio() {
-  const response = await fetch('./portfolio.json');
+  const response = await fetch('./portfolio.json?v=b585e4637080');
   if (!response.ok) throw new Error('Failed to load portfolio');
   const data = await response.json();
   let lastCover;

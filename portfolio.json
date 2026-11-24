@@ -67,6 +67,7 @@
     "furry": {
       "thumbnail": "./furry-01.webp",
       "works": [
+        "./furry-15.webp",
         "./furry-01.webp",
         "./furry-02.webp",
         "./furry-03.webp",
