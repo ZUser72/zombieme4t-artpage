@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ZOMBIEME4T’s art portfolio featuring Default, Furry, and Horror illustrations.">
+  <meta name="theme-color" content="#10100e">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; font-src 'self' data:; img-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'">
+  <title>ZOMBIEME4T — Portfolio</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./gallery.js"></script>
+</head>
+<body id="top">
+  <header class="mast wrap">
+    <a class="brand" href="#top" aria-label="ZOMBIEME4T, back to top"><span class="brand-skull" aria-hidden="true">&#x2620;&#xfe0e;</span> ZOMBIEME4T</a>
+    <nav aria-label="Main navigation">
+      <a href="#portfolio">Artwork <span aria-hidden="true">↘</span></a>
+      <button type="button" id="price-nav">Pricing <span aria-hidden="true">↗</span></button>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" aria-labelledby="artist">
+      <div class="hero-copy">
+        <p class="tag"><span aria-hidden="true">✦</span> ART PORTFOLIO</p>
+        <h1 id="artist" aria-label="ZOMBIEME4T"><span>ZOMBIE</span><span>ME4T<span class="title-mark" aria-hidden="true">✷</span></span></h1>
+        <a class="entrance" href="#portfolio"><span>View artwork</span><span aria-hidden="true">↓</span></a>
+      </div>
+      <figure class="cover">
+        <img id="cover-image" alt="Cover illustration by ZOMBIEME4T" hidden>
+        <span class="cover-corner" aria-hidden="true"></span>
+        <span class="cover-stripes" aria-hidden="true"></span>
+      </figure>
+    </section>
+
+    <section class="portfolio" id="portfolio" aria-labelledby="portfolio-title">
+      <div class="section-title">
+        <h2 id="portfolio-title">Artwork</h2>
+        <span class="section-rule" aria-hidden="true"></span>
+        <span id="work-count"></span>
+      </div>
+      <p class="load-error" id="load-error" role="status" hidden>Could not load the artwork. Refresh the page to try again.</p>
+      <div class="categories">
+        <button type="button" class="category default" data-category="default" aria-haspopup="dialog" disabled>
+          <span class="category-art"><img alt="" hidden></span>
+          <span class="category-meta"><span class="category-name" lang="en">DEFAULT</span><span class="category-count"></span><span class="category-arrow" aria-hidden="true">↗</span></span>
+        </button>
+        <button type="button" class="category furry" data-category="furry" aria-haspopup="dialog" disabled>
+          <span class="category-art"><img alt="" hidden></span>
+          <span class="category-meta"><span class="category-name" lang="en">FURRY</span><span class="category-count"></span><span class="category-arrow" aria-hidden="true">↗</span></span>
+        </button>
+        <button type="button" class="category horror" data-category="horror" aria-haspopup="dialog" disabled>
+          <span class="category-art"><img alt="" hidden></span>
+          <span class="category-meta"><span class="category-name" lang="en">HORROR</span><span class="category-count"></span><span class="category-arrow" aria-hidden="true">↗</span></span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap site-footer"><a href="./credits.txt">Typeface credits</a></footer>
+
+  <aside class="price" aria-label="Price list">
+    <div class="price-inner wrap">
+      <button type="button" class="price-toggle" id="price-toggle" aria-expanded="false" aria-controls="price-content">
+        <span class="price-name"><span aria-hidden="true">✦</span> PRICE LIST</span>
+        <span class="price-action"><span>Open</span><span class="price-arrow" aria-hidden="true">↑</span></span>
+      </button>
+      <div class="price-content" id="price-content" hidden>
+        <div id="price-text">Loading…</div>
+      </div>
+    </div>
+  </aside>
+
+  <dialog id="gallery" aria-labelledby="gallery-title">
+    <div class="dialog-frame">
+      <header class="dialog-header">
+        <h2 id="gallery-title" lang="en"></h2>
+        <button type="button" class="icon-button" id="gallery-close" aria-label="Close gallery">×</button>
+      </header>
+      <div class="gallery-body" id="gallery-body">
+        <div class="gallery-grid" id="gallery-grid"></div>
+        <figure class="viewer" id="viewer" hidden>
+          <img id="viewer-image" alt="">
+          <figcaption aria-live="polite" id="viewer-caption"></figcaption>
+          <div class="viewer-actions">
+            <button type="button" id="viewer-back">Back to grid</button>
+            <button type="button" class="icon-button" id="viewer-prev" aria-label="Previous artwork">←</button>
+            <button type="button" class="icon-button" id="viewer-next" aria-label="Next artwork">→</button>
+          </div>
+        </figure>
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>

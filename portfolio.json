@@ -1,0 +1,105 @@
+{
+  "covers": [
+    {
+      "name": "covers-01",
+      "src": "./covers-01.webp",
+      "position": "center"
+    },
+    {
+      "name": "covers-02",
+      "src": "./covers-02.webp",
+      "position": "center"
+    },
+    {
+      "name": "covers-03",
+      "src": "./covers-03.webp",
+      "position": "50% 41%"
+    },
+    {
+      "name": "covers-04",
+      "src": "./covers-04.webp",
+      "position": "50% 43%"
+    },
+    {
+      "name": "covers-05",
+      "src": "./covers-05.webp",
+      "position": "50% 39%"
+    }
+  ],
+  "price": "Portrait | Sketch $7 | Colored Sketch $10 | Full $12–$20\nHalf | Sketch $12 | Colored Sketch $15–$20 | Full $25–$35\nFull | Sketch $25 | Colored Sketch $30–$40 | Full $45–$55\nOptions | Complex background +$20 | Additional character +70% of price\nNSFW | Individual price",
+  "categories": {
+    "default": {
+      "thumbnail": "./default-03.webp",
+      "works": [
+        "./default-01.webp",
+        "./default-02.webp",
+        "./default-03.webp",
+        "./default-04.webp",
+        "./default-05.webp",
+        "./default-06.webp",
+        "./default-07.webp",
+        "./default-08.webp",
+        "./default-09.webp",
+        "./default-10.webp",
+        "./default-11.webp",
+        "./default-12.webp",
+        "./default-13.webp",
+        "./default-14.webp",
+        "./default-15.webp",
+        "./default-16.webp",
+        "./default-17.webp",
+        "./default-18.webp",
+        "./default-19.webp",
+        "./default-20.webp",
+        "./default-21.webp",
+        "./default-22.webp",
+        "./default-23.webp",
+        "./default-24.webp",
+        "./default-25.webp",
+        "./default-26.webp",
+        "./default-27.webp",
+        "./default-28.webp",
+        "./default-29.webp",
+        "./default-30.webp",
+        "./default-31.webp"
+      ]
+    },
+    "furry": {
+      "thumbnail": "./furry-01.webp",
+      "works": [
+        "./furry-01.webp",
+        "./furry-02.webp",
+        "./furry-03.webp",
+        "./furry-04.webp",
+        "./furry-05.webp",
+        "./furry-06.webp",
+        "./furry-07.webp",
+        "./furry-08.webp",
+        "./furry-09.webp",
+        "./furry-10.webp",
+        "./furry-11.webp",
+        "./furry-12.webp",
+        "./furry-13.webp",
+        "./furry-14.webp"
+      ]
+    },
+    "horror": {
+      "thumbnail": "./horror-04.webp",
+      "works": [
+        "./horror-01.webp",
+        "./horror-02.webp",
+        "./horror-03.webp",
+        "./horror-04.webp",
+        "./horror-05.webp",
+        "./horror-06.webp",
+        "./horror-07.webp",
+        "./horror-08.webp",
+        "./horror-09.webp",
+        "./horror-10.webp",
+        "./horror-11.webp",
+        "./horror-12.webp",
+        "./horror-13.webp"
+      ]
+    }
+  }
+}
