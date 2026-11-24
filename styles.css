@@ -49,7 +49,8 @@ figure, h1, h2, h3, p { margin: 0; }
   color: var(--lime);
   font: 25px/1 var(--punk);
 }
-.brand-skull { color: var(--pink); font: 26px/1 "Segoe UI Symbol", "DejaVu Sans", sans-serif; }
+.skull { font-family: "Segoe UI Symbol", "DejaVu Sans", sans-serif; }
+.brand-skull { color: var(--pink); font-size: 26px; line-height: 1; }
 .mast nav { display: flex; gap: clamp(14px, 4vw, 54px); }
 .mast nav a, .mast nav button {
   border: 0;
@@ -105,7 +106,8 @@ figure, h1, h2, h3, p { margin: 0; }
 .title-mark {
   display: inline-block;
   color: var(--pink);
-  font: 400 .32em/.8 Arial, sans-serif;
+  font-size: .32em;
+  line-height: .8;
   transform: translate(.13em, -.78em) rotate(17deg);
 }
 .entrance {
@@ -196,8 +198,6 @@ figure, h1, h2, h3, p { margin: 0; }
   background: var(--accent);
 }
 .category-name { font: 400 clamp(26px, 3.1vw, 53px)/.91 var(--punk); }
-.furry .category-name { font-family: "Glitch", var(--punk); }
-.horror .category-name { font-family: "Ransom", var(--punk); }
 .category-count { margin-left: auto; }
 .category-arrow { font: 29px/1 Arial, sans-serif; transition: transform .24s ease; }
 .category:not(:disabled):hover img, .category:focus-visible img { transform: scale(1.07); }
@@ -230,7 +230,7 @@ figure, h1, h2, h3, p { margin: 0; }
 }
 .price button:focus-visible { outline-color: var(--ink); outline-offset: -3px; }
 .price-name { font: 400 clamp(24px, 3vw, 35px)/1 "Ransom", var(--punk); }
-.price-name > span { font-family: Arial, sans-serif; font-size: .7em; margin-right: 4px; }
+.price-name > span { font-size: .7em; margin-right: 4px; }
 .price-action { display: flex; align-items: center; gap: 10px; font: 700 12px/1 var(--mono); text-transform: uppercase; }
 .price-arrow { display: grid; width: 30px; height: 30px; place-items: center; border: 1px solid var(--ink); font: 23px/1 Arial, sans-serif; }
 .price-toggle:hover .price-arrow { color: var(--pink); background: var(--ink); }
